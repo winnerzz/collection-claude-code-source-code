@@ -51,6 +51,7 @@ Source archive of Claude Code and different versions of the clean-room Python re
     + [Features](#features)
     + [Supported Models](#supported-models)
     + [Project Structure](#project-structure)
+  * [AI Intelligence Evolution Path](#ai-intelligence-evolution-path)
   * [Comparison of the Projects](#comparison-of-the-projects)
   * [License and Disclaimer](#license-and-disclaimer)
 
@@ -65,6 +66,23 @@ This repository contains subprojects that study Claude Code (Anthropic’s offic
 | [claude-code-source-code](#2-claude-code-source-code)   | TypeScript | Decompiled source archive (v2.1.88) + docs| 1,940 files |
 | [claw-code](#3-claw-code)                               | Python     | Clean-room architectural rewrite          | 109 files   |
 | [nano-claude-code](#4-nano-claude-code)                 | Python     | Minimal multi-provider reimplementation   | ~30 files   |
+
+---
+
+## AI Intelligence Evolution Path
+
+This repository can be read as a compact path from general AI capability to practical engineering:
+
+1. **Large Language Models (LLMs)**  
+   Foundation models (reasoning + code generation + tool-calling readiness) provide the core intelligence.
+2. **Coding Agent Product Layer (Claude Code)**  
+   Claude Code packages LLM capability into a real developer workflow: CLI interaction, tool orchestration, permission control, memory, and multi-turn execution.
+3. **Reimplementation & Abstraction Layer (`claw-code`, `nano-claude-code`)**  
+   The Python ports demonstrate how to reconstruct these capabilities into cleaner, modular architectures and make the agent loop easier to study and extend.
+4. **Agent Engineering Layer**  
+   The next step is system-level agent engineering: multi-agent coordination, long-term memory, skills/plugins, observability, safety policies, and production workflows.
+
+In short: **LLM capability → productized coding agent (Claude Code) → portable architecture → agent engineering practice**.
 
 ---
 
@@ -460,6 +478,5 @@ SendMessage(agent_name="my-agent", message="...")
 | Main Use Case           | Raw reference snapshot         | Deep study of full implementation details | Architectural understanding and porting research | Lightweight full-featured coding assistant    |
 
 ---
-
 
 
