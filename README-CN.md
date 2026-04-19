@@ -7,7 +7,7 @@
 | 子项目 | 语言 | 性质 | 文件数 |
 |--------|------|------|--------|
 | [claude-code-source-code](#一-claude-code-source-code) | TypeScript | 反编译源码档案（v2.1.88） | 1,884 个 |
-| [claw-code](#二-claw-code) | Python | 清室架构重写 | 66 个 |
+| [claw-code](#二-claw-code) | Python | 清洁室架构重写 | 66 个 |
 
 ---
 
@@ -20,7 +20,7 @@
 2. **产品化编码智能体层（Claude Code）**  
    Claude Code 将模型能力封装为可用的开发者产品：CLI 交互、工具编排、权限控制、会话记忆与多轮执行。
 3. **重写与抽象层（`claw-code`）**  
-   Python 清室重写展示了如何把复杂能力拆解为更清晰的模块化架构，便于学习、迁移与二次开发。
+   Python 清洁室重写展示了如何把复杂能力拆解为更清晰的模块化架构，便于学习、迁移与二次开发。
 4. **Agent 工程层**  
    进一步走向多智能体协作、长期记忆、技能/插件体系、可观测性、安全策略与生产级工作流集成。
 
@@ -157,7 +157,7 @@ yield SDKMessage           # 流式返回给消费者
 
 ## 二、claw-code
 
-对 Claude Code 的 Python 清室重写（不包含原始代码副本），专注于架构镜像与研究。由 [@instructkr](https://github.com/instructkr)（Sigrid Jin）完成，成为全球最快达到 30K stars 的 GitHub 仓库之一。
+对 Claude Code 的 Python 清洁室重写（不包含原始代码副本），专注于架构镜像与研究。由 [@instructkr](https://github.com/instructkr)（Sigrid Jin）完成，成为全球最快达到 30K stars 的 GitHub 仓库之一。
 
 ### 整体架构
 
@@ -259,7 +259,7 @@ tool-pool            # 工具池组装视图
 ### 设计特点
 
 - **快照驱动**：通过 JSON 快照文件加载命令/工具元数据，无需完整实现逻辑
-- **清室重写**：不包含原始 TypeScript 代码，独立实现
+- **清洁室重写**：不包含原始 TypeScript 代码，独立实现
 - **奇偶审计**：内置 `parity_audit.py` 追踪与原实现的差距
 - **轻量架构**：66 个文件实现核心框架，适合学习与扩展
 
@@ -271,7 +271,7 @@ tool-pool            # 工具池组装视图
 |------|------------------------|-----------|
 | 语言 | TypeScript | Python |
 | 代码量 | ~163,000 行 | ~5,000 行 |
-| 性质 | 反编译源码档案 | 清室架构重写 |
+| 性质 | 反编译源码档案 | 清洁室架构重写 |
 | 功能完整度 | 完整（100%） | 架构框架（~20%） |
 | 核心循环 | `query.ts`（785KB） | `QueryEnginePort`（~200 行） |
 | 工具系统 | 40+ 完整实现 | 快照元数据 + 执行框架 |
